@@ -19,7 +19,7 @@ const Seo = ({ description, lang, meta, title }) => {
             title
             description
             social {
-              twitter
+              username
             }
           }
         }
@@ -60,7 +60,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
+          content: `https://twitter.com/${site.siteMetadata?.social?.twitter || ``}`,
         },
         {
           name: `twitter:title`,

@@ -16,11 +16,15 @@ const Bio = () => {
         siteMetadata {
           author {
             name
-            summary
+            location
+            locationLink
+            work
+            workLink
           }
           social {
-            twitter
+            username
           }
+          description
         }
       }
     }
@@ -36,7 +40,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/me.jpg"
         width={50}
         height={50}
         quality={95}
