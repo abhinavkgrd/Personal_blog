@@ -21,7 +21,8 @@ const BlogIndex = ({ data, location }) => {
                         justifyContent: 'center',
                         flex: '1',
                         flexDirection: 'column',
-                    }}>
+                    }}
+                >
                     <h4>Something good is cooking 😋</h4>
                     <p>patience is request. 😌 </p>
                     <div style={{ fontSize: '100px' }}>
@@ -45,12 +46,14 @@ const BlogIndex = ({ data, location }) => {
                             <article
                                 className="post-list-item"
                                 itemScope
-                                itemType="http://schema.org/Article">
+                                itemType="http://schema.org/Article"
+                            >
                                 <header>
                                     <h2>
                                         <Link
                                             to={post.fields.slug}
-                                            itemProp="url">
+                                            itemProp="url"
+                                        >
                                             <span itemProp="headline">
                                                 {title}
                                             </span>
