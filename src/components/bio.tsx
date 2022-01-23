@@ -57,8 +57,8 @@ const Bio = () => {
                             </strong>
                         </li>
                         <li>
-                            I am currently, with a bunch of awesome people
-                            building <br />
+                            I am currently, with a bunch of awesome people,
+                            building
                             <strong>
                                 <a target={'_blank'} href={work.link}>
                                     {' '}
