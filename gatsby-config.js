@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
     siteMetadata: {
         title: `Abhinav Kumar`,
@@ -25,6 +27,12 @@ module.exports = {
             options: {
                 path: `${__dirname}/content/blog`,
                 name: `blog`,
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-root-import',
+            options: {
+                src: path.join(__dirname, 'src'),
             },
         },
         {
