@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Learnings`,
+        title: `Abhinav Kumar`,
         author: {
             name: `Abhinav Kumar`,
             location: `Giridih, Jharkhand, India`,
@@ -9,7 +9,7 @@ module.exports = {
         },
         work: {
             name: `ente.io`,
-            description: `which provided encrypted backups for photos and videos`,
+            description: `which provides encrypted backups for photos and videos`,
             link: `https://ente.io`,
         },
         description: `This is my blog documenting the learnings in my life in real-time i.e.,(weekly 😛)`,
