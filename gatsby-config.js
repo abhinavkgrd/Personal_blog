@@ -12,8 +12,8 @@ module.exports = {
             description: `which provided encrypted backups for photos and videos`,
             link: `https://ente.io`,
         },
-        description: `This is my blog documenting the learnings in my life in real-time (weekly 😛)`,
-        siteURL: `https://abhinav.info/learnings`,
+        description: `This is my blog documenting the learnings in my life in real-time i.e.,(weekly 😛)`,
+        siteURL: `https://learnings.abhinav.info/`,
         social: {
             username: 'abhinavkgrd',
         },
