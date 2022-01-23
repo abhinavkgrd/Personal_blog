@@ -18,8 +18,11 @@ const Bio = () => {
                         name
                         location
                         locationLink
-                        work
-                        workLink
+                    }
+                    work {
+                        name
+                        link
+                        description
                     }
                     social {
                         username
@@ -32,30 +35,52 @@ const Bio = () => {
 
     // Set these values by editing "siteMetadata" in gatsby-config.js
     const author = data.site.siteMetadata?.author
+    const work = data.site.siteMetadata?.work
     const social = data.site.siteMetadata?.social
+
+    console.log(author, work)
 
     return (
         <div className="bio">
-            <StaticImage
+            {author?.name && (
+                <ul>
+                    <li>
+                        Hii 👋, I am <strong>{author.name}</strong>{' '}
+                        {author?.summary || null}
+                    </li>
+                    <li>
+                        I live and break stuff from 📍
+                        <strong>
+                            <a target={'_blank'} href={author.locationLink}>
+                                {' '}
+                                {author.location}
+                            </a>
+                        </strong>
+                    </li>
+                    <li>
+                        I am currently, with a bunch of awesome people building{' '}
+                        <br />
+                        <strong>
+                            <a target={'_blank'} href={work.link}>
+                                {' '}
+                                {work.name}{' '}
+                            </a>
+                        </strong>
+                        - {work.description}
+                    </li>
+                </ul>
+            )}
+            {/* <StaticImage
                 className="bio-avatar"
                 layout="fixed"
                 formats={['auto', 'webp', 'avif']}
                 src="../images/me.jpg"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 quality={95}
+                objectFit={'cover'}
                 alt="Profile picture"
-            />
-            {author?.name && (
-                <p>
-                    Written by <strong>{author.name}</strong>{' '}
-                    {author?.summary || null}
-                    {` `}
-                    <a href={`https://twitter.com/${social?.twitter || ``}`}>
-                        You should follow them on Twitter
-                    </a>
-                </p>
-            )}
+            /> */}
         </div>
     )
 }

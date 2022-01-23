@@ -5,6 +5,7 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import CookingGIF from '../images/cooking.gif'
+
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
     const posts = data.allMarkdownRemark.nodes
@@ -12,8 +13,9 @@ const BlogIndex = ({ data, location }) => {
     if (posts.length !== 0) {
         return (
             <Layout location={location} title={siteTitle}>
-                <Seo title="All posts" />
+                <Seo title="Home" />
                 <Bio />
+                <hr />
                 <div
                     style={{
                         display: 'flex',
@@ -21,10 +23,9 @@ const BlogIndex = ({ data, location }) => {
                         justifyContent: 'center',
                         flex: '1',
                         flexDirection: 'column',
-                    }}
-                >
+                    }}>
                     <h4>Something good is cooking 😋</h4>
-                    <p>patience is request. 😌 </p>
+                    <p>please be patience 😌 </p>
                     <div style={{ fontSize: '100px' }}>
                         <img src={CookingGIF} alt="cooking gif" />
                     </div>
@@ -37,6 +38,7 @@ const BlogIndex = ({ data, location }) => {
         <Layout location={location} title={siteTitle}>
             <Seo title="All posts" />
             <Bio />
+            <hr />
             <ol style={{ listStyle: `none` }}>
                 {posts.map(post => {
                     const title = post.frontmatter.title || post.fields.slug
@@ -46,14 +48,12 @@ const BlogIndex = ({ data, location }) => {
                             <article
                                 className="post-list-item"
                                 itemScope
-                                itemType="http://schema.org/Article"
-                            >
+                                itemType="http://schema.org/Article">
                                 <header>
                                     <h2>
                                         <Link
                                             to={post.fields.slug}
-                                            itemProp="url"
-                                        >
+                                            itemProp="url">
                                             <span itemProp="headline">
                                                 {title}
                                             </span>

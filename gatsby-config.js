@@ -1,13 +1,16 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Starter Blog`,
+        title: `Learnings`,
         author: {
             name: `Abhinav Kumar`,
-            location: `who lives and breaks stuff from Giridih, Jharkhand, India`,
+            location: `Giridih, Jharkhand, India`,
             locationLink:
                 'https://www.openstreetmap.org/way/155432667#map=8/24.420/86.556',
-            work: `I am currently building ente.io which provided encrypted backups for photos and videos, with a bunch of awesome people.`,
-            workLink: `https://ente.io`,
+        },
+        work: {
+            name: `ente.io`,
+            description: `which provided encrypted backups for photos and videos`,
+            link: `https://ente.io`,
         },
         description: `This is my blog documenting the learnings in my life in real-time (weekly 😛)`,
         siteURL: `https://abhinav.info/learnings`,
