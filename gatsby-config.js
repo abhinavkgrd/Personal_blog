@@ -2,14 +2,17 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Abhinav Kumar`,
+      location: `who lives and breaks stuff from Giridih, Jharkhand, India`,
+      locationLink:"https://www.openstreetmap.org/way/155432667#map=8/24.420/86.556",
+      work:`I am currently building ente.io which provided encrypted backups for photos and videos, with a bunch of awesome people.`,
+      workLink:`https://ente.io`
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `This is my blog documenting the learnings in my life in real-time (weekly 😛)`,
+    siteURL: `https://abhinav.info/learnings`,
+    social:{
+      username:"abhinavkgrd",
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -121,7 +124,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
